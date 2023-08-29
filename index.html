@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section id="about">
-        <h1>About Me</h1>
-        <p>Hi, I'm Lucas and I'm 23 years.</br>I'm a computer science student and I currently work as a helpdesk support but I hope to become a software developer soon.</p>
-      </section>
-      
-      <section id="work">
-        <h1></h1>
-        <div class="portfolio-items">
-          <!--Insert portfolio items here-->
+<head>
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dark-mode.css" id="dark-mode-stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#work">Trabalhos</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a href="#social">Redes Sociais</a></li>
+    </nav>
+    <button id="dark-mode-toggle">Modo Escuro</button>
+  </header>
+  
+  <main>
+    <section id="work">
+      <div class="portfolio-items">
+        <div id="projects">
+          <section id="github-projects">
+            <h1>Meus Projetos no GitHub</h1>
+            <ul id="project-list"></ul>
+          </section>
         </div>
-      </section>
-      
-      <section id="contact">
-        <h1>Contact Me</h1>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          
-          <input type="submit" value="Send">
-        </form>
-      </section>
-    </main>
-    
-    <footer>
-      <p>&copy; 2023 Lucas Oliveira. All rights reserved.</p>
-    </footer>
-  </body>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contato</h1>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section id="social">
+      <h1>Redes Sociais</h1>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/1ucaso1iveira"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/1ucaso1iveira"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.tiktok.com/@1ucaso1iveira"><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="https://www.youtube.com/c/lucasoliveiraofficial"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/1ucaso1iveira/"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </section>  
+    <p>&copy; 2023 Lucas Oliveira. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

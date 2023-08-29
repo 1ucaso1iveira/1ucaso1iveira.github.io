@@ -1,0 +1,40 @@
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  body.dark-mode header {
+    background-color: #333;
+  }
+  
+  body.dark-mode header nav ul li a {
+    color: #ddd;
+  }
+/* Dark mode styles for the GitHub projects section */
+.dark-mode #github-projects {
+    background-color: #444; /* Adjust the background color as needed */
+    color: #ddd; /* Adjust the text color as needed */
+  }
+  
+  .dark-mode #project-list a {
+    color: #ddd; /* Adjust link color as needed */
+  }
+  
+  .dark-mode #project-list a:hover {
+    color: #aaa; /* Adjust hover link color as needed */
+  }
+  /* Styles for the dark mode toggle button */
+#dark-mode-toggle {
+    background-color: #ffffff;
+    color: #040404;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #dark-mode-toggle:hover {
+    background-color: #6b6b6b;
+  }
+  
